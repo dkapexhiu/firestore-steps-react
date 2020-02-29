@@ -1,4 +1,4 @@
-#Firestore Multi Steps Form React.js
+# Firestore Multi Steps Form React.js
 
 This is the example project with react and redux, with persist usage and firebase firestore.
 
