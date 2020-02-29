@@ -1,0 +1,85 @@
+.multi-step {
+  width: 600px;
+  margin: 100px auto;
+}
+.progtrckr li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7d7d7d;
+}
+.progtrckr li:before {
+  width: 20px;
+  height: 20px;
+  content: "";
+  counter-increment: step;
+  line-height: 20px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-top: 3px solid grey;
+  border-bottom: 3px solid grey;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: white;
+}
+.progtrckr li:after {
+  width: 100%;
+  height: 3px;
+  content: "";
+  position: absolute;
+  background-color: white;
+  top: 10px;
+  left: -50%;
+  z-index: -1;
+  box-shadow: 0 0 0 3px grey, 0 2px 6px 18px rgba(0, 0, 0, 0);
+}
+.progtrckr li:first-child:after {
+  content: none;
+  border-color: #fa0;
+  background: #fa0;
+  color: white;
+}
+.progtrckr li.progtrckr-doing {
+  color: green;
+}
+.progtrckr li.progtrckr-doing:before {
+  border-color: grey;
+  background: #fa0;
+  color: white;
+  content: "\2022";
+  line-height: 16px;
+  border-left: 2px solid grey;
+}
+.progtrckr li.progtrckr-doing:after {
+  border-color: #fa0;
+  background: #fa0;
+  color: white;
+}
+.progtrckr li.progtrckr-doing + li:after {
+  border-color: #fa0;
+  background: #fa0;
+  color: white;
+}
+em {
+  display: none;
+}
+.progtrckr li.progtrckr-done:after {
+  border-color: #fa0;
+  background: #fa0;
+  color: white;
+}
+.progtrckr li.progtrckr-done:before {
+  background: #fa0;
+  color: white;
+  content: "\2022";
+}
+.progtrckr li:last-of-type:before {
+  border-right: 3px solid grey;
+}

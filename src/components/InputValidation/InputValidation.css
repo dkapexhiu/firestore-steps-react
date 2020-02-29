@@ -1,0 +1,11 @@
+.input-validation-container .input.disabled {
+    background-color: #222;
+}
+.input-validation-container .error-container {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+.input-validation-container .error-container .error {
+    margin: 0;
+    color: red;
+    font-size: 13px; }
