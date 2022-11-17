@@ -12,7 +12,7 @@
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "5.1.2",
-    "react-scripts": "1.1.0",
+    "react-scripts": "5.0.1",
     "react-stepzilla": "6.0.2",
     "redux": "^3.7.2",
     "redux-persist": "^5.5.0"
@@ -27,7 +27,7 @@
   "devDependencies": {
     "node-sass": "^4.5.2",
     "npm-run-all": "^4.0.2",
-    "react-scripts": "^0.9.5",
+    "react-scripts": "^5.0.1",
     "snazzy": "^7.0.0",
     "standard": "^10.0.2"
   }
